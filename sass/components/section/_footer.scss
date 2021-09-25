@@ -1,0 +1,105 @@
+/* ----------------FOOTER-------------------- */
+.footer {
+  background-color: #2f303a;
+  padding: 60px 0;
+}
+
+.footer-list {
+  display: flex;
+  align-items: baseline;
+}
+.footer-address {
+  flex-grow: 1;
+  margin-right: 70px;
+}
+.footer-address__item {
+  &:not(:last-child) {
+    margin-bottom: 9px;
+  }
+}
+.footer-address__location {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.footer-address__contacts {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  &:hover,
+  &:focus {
+    color: $decorative-color-text;
+  }
+}
+
+/* ----------footer social------- */
+.footer-social {
+  margin-right: 93px;
+}
+.footer-title {
+  margin-bottom: 20px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+.footer-social__item {
+  &:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.footer-social__list {
+  display: flex;
+  justify-content: center;
+}
+.footer-social__link {
+  padding: 12px;
+  border-radius: 50%;
+  color: #fff;
+  background-color: rgba(255, 255, 255, 0.1);
+  transition: background-color 250ms $main-cubic-bezier;
+  &:hover,
+  &:focus {
+    border-radius: 50%;
+    background-color: $decorative-color-text;
+  }
+}
+
+.footer-social__icon {
+  width: 20px;
+  height: 20px;
+  fill: currentColor;
+}
+/* ----------END.footer social------- */
+
+.footer-subscribe__form {
+  display: flex;
+}
+.footer-subscribe__input {
+  width: 358px;
+  height: 50px;
+  margin-right: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.15));
+  border-radius: 4px;
+  font-size: 16px;
+  line-height: 1.25;
+  align-items: center;
+  letter-spacing: 0.03em;
+  background-color: #2f303a;
+  color: rgba(255, 255, 255, 0.6);
+  padding: 0 16px;
+}
+.footer-subscribe__icon {
+  margin-left: 10px;
+  width: 24px;
+  height: 24px;
+  fill: currentColor;
+  color: #fff;
+}
+/* --------------End.FOOTER------------------ */

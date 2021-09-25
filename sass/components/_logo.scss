@@ -1,0 +1,20 @@
+.logo {
+  display: block;
+  font-family: Raleway;
+  font-weight: 700;
+  font-size: 26px;
+  letter-spacing: 0.03em;
+  & .logo--text {
+    color: $decorative-color-text;
+  }
+}
+.header-logo {
+  padding-top: 24px;
+  padding-bottom: 25px;
+  margin-right: 93px;
+  color: #000;
+}
+.footer-logo {
+  margin-bottom: 20px;
+  color: #ffffff;
+}
