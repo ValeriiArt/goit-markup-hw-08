@@ -49,7 +49,13 @@ address {
 
 @media screen and (min-width: 480px) {
   .container {
-    width: 450px;
+    width: 480px;
+  }
+}
+
+@media screen and (min-width: 768px) {
+  .container {
+    width: 768px;
   }
 }
 
