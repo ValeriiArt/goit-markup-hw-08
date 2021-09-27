@@ -16,13 +16,11 @@
     <link rel="stylesheet" href="./css/main.min.css">
 </head>
 <body>
-    <!-- <header class="header">
+    <header class="header">
         <div class="container header__nav">
+            <a class="logo header-logo" href="./index.html">
+                <span class="logo--text">Web</span>Studio</a>
             <nav class="site-nav">
-                <a class="logo header-logo" href="./index.html">
-                    <span class="logo--text">Web</span>Studio
-                    <img src="./images/logo.svg" alt="Логотип компании">
-                </a>
                 <ul class="site-nav__list">
                     <li class="site-nav__item">
                         <a class="site-nav__link active" href="./index.html">Студия</a>
@@ -53,16 +51,66 @@
                     </a>
                 </li>
             </ul>
+            <button class="mobile-open" type="button" data-menu-open>
+                <svg class="mobile-open__icon">
+                    <use href="./images/icon-sprite.svg#icon-menu"></use>
+                </svg>
+            </button>
         </div>
-    </header> -->
+        <div class="mobile-menu is-hidden" data-menu>
+            <ul class="mobile-menu__list">
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link mobile-menu__link--active" href="./index.html">Студия</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="./portfolio.html">Портфолио</a>
+                </li>
+                <li class="mobile-menu__item">
+                    <a class="mobile-menu__link" href="">Контакты</a>
+                </li>
+            </ul>
+            <div class="mobile-contact">
+                <ul class="mobile-contact__list">
+                    <li class="mobile-contact__item">
+                        <a href="tel:+380961111111" class="mobile-contact__link mobile-contact__link--phone">+38 096 111 11 11</a>
+                    </li>
+                    <li class="mobile-contact__item">
+                        <a href="mailto:info@devstudio.com" class="mobile-contact__link">info@devstudio.com</a>
+                    </li>
+                </ul>
+                <ul class="mobile-social__list">
+                    <li class="mobile-social__item">
+                        <a href="" class="mobile-social__link">Instagram</a>
+                        <span class="mobile-social__grep"></span>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a href="" class="mobile-social__link">Twitter</a>
+                        <span class="mobile-social__grep"></span>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a href="" class="mobile-social__link">Facebook</a>
+                        <span class="mobile-social__grep"></span>
+                    </li>
+                    <li class="mobile-social__item">
+                        <a href="" class="mobile-social__link">LinkedIn</a>
+                    </li>
+                </ul>
+            </div>
+            <button class="menu-close" type="button" data-menu-close>
+                <svg class="menu-close__icon">
+                    <use href="./images/icon-sprite.svg#icon-close"></use>
+                </svg>
+            </button>
+        </div>
+    </header>
     <main>
         <!--Section_1-->
-        <!-- <section class="hero">
+        <section class="hero">
             <div class="container">
                 <h1 class="hero__title">Эффективные решения<br> для вашего бизнеса</h1>
                 <button class="btn hero__btn" type="button" data-modal-open>Заказать услугу</button>
             </div>
-        </section> -->
+        </section>
         <!--Section_2-->
          <section class="section">
             <div class="container">
@@ -108,7 +156,7 @@
             </div>
         </section> 
         <!--Section_3-->
-        <!-- <section class="section section--work">
+        <section class="section section--work">
             <div class="container">
                 <h2 class="secondary-title">Чем мы занимаемся</h2>
                 <ul class="our-work">
@@ -132,14 +180,22 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
         <!--Section_4-->
-        <!-- <section class="section section--team">
+        <section class="section section--team">
             <div class="container">
                 <h2 class="secondary-title">Наша команда</h2>
                 <ul class="our-team">
                     <li class="our-team__item">
-                        <img src="./images/team-work/card-1-min.jpg" alt="Игорь Демьяненко" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/team-work/pc/card-1-pc-1x-min.jpg 1x,
+                            ./images/team-work/pc/card-1-pc-2x-min.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./images/team-work/tab/card-1-tab-1x-min.jpg 1x,
+                            ./images/team-work/tab/card-1-tab-2x-min.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./images/team-work/mob/card-1-mob-1x-min.jpg 1x,
+                            ./images/team-work/mob/card-1-mob-2x-min.jpg 2x" media="(min-width:480px)">
+                            <img src="./images/team-work/pc/card-1-pc-1x-min.jpg" alt="Игорь Демьяненко">
+                        </picture>
                         <div class="our-team__card">
                             <h3 class="our-team__title">Игорь Демьяненко</h3>
                             <p class="our-team__text" lang="en">Product Designer</p>
@@ -176,7 +232,15 @@
                         </div>
                     </li>
                     <li class="our-team__item">
-                        <img src="./images/team-work/card-2-min.jpg" alt="Ольга Репина" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/team-work/pc/card-2-pc-1x-min.jpg 1x,
+                            ./images/team-work/pc/card-2-pc-2x-min.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./images/team-work/tab/card-2-tab-1x-min.jpg 1x,
+                            ./images/team-work/tab/card-2-tab-2x-min.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./images/team-work/mob/card-2-mob-1x-min.jpg 1x,
+                            ./images/team-work/mob/card-2-mob-2x-min.jpg 2x" media="(min-width:480px)">
+                            <img src="./images/team-work/pc/card-2-pc-1x-min.jpg" alt="Ольга Репина">
+                        </picture>
                         <div class="our-team__card">
                             <h3 class="our-team__title">Ольга Репина</h3>
                             <p class="our-team__text" lang="en">Frontend Developer</p>
@@ -213,7 +277,15 @@
                         </div>
                     </li>
                     <li class="our-team__item">
-                        <img src="./images/team-work/card-3-min.jpg" alt="Николай Тарасов" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/team-work/pc/card-3-pc-1x-min.jpg 1x,
+                            ./images/team-work/pc/card-3-pc-2x-min.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./images/team-work/tab/card-3-tab-1x-min.jpg 1x,
+                            ./images/team-work/tab/card-3-tab-2x-min.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./images/team-work/mob/card-3-mob-1x-min.jpg 1x,
+                            ./images/team-work/mob/card-3-mob-2x-min.jpg 2x" media="(min-width:480px)">
+                            <img src="./images/team-work/pc/card-3-pc-1x-min.jpg" alt="Николай Тарасов">
+                        </picture>
                         <div class="our-team__card">
                             <h3 class="our-team__title">Николай Тарасов</h3>
                             <p class="our-team__text" lang="en">Marketing</p>
@@ -250,7 +322,15 @@
                         </div>
                     </li>
                     <li class="our-team__item">
-                        <img src="./images/team-work/card-4-min.jpg" alt="Михаил Ермаков" width="270" height="260">
+                        <picture>
+                            <source srcset="./images/team-work/pc/card-4-pc-1x-min.jpg 1x,
+                            ./images/team-work/pc/card-4-pc-2x-min.jpg 2x" media="(min-width:1200px)">
+                            <source srcset="./images/team-work/tab/card-4-tab-1x-min.jpg 1x,
+                            ./images/team-work/tab/card-4-tab-2x-min.jpg 2x" media="(min-width:768px)">
+                            <source srcset="./images/team-work/mob/card-4-mob-1x-min.jpg 1x,
+                            ./images/team-work/mob/card-4-mob-2x-min.jpg 2x" media="(min-width:480px)">
+                            <img src="./images/team-work/pc/card-4-pc-1x-min.jpg" alt="Михаил Ермаков">
+                        </picture>
                         <div class="our-team__card">
                             <h3 class="our-team__title">Михаил Ермаков</h3>
                             <p class="our-team__text" lang="en">UI Designer</p>
@@ -288,8 +368,8 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
-        <!-- <section class="section">
+        </section>
+        <section class="section">
             <div class="container">
                 <h2 class="secondary-title">Постоянные клиенты</h2>
                 <ul class="clients">
@@ -337,15 +417,13 @@
                     </li>
                 </ul>
             </div>
-        </section> -->
+        </section>
     </main>
-    <!-- <footer class="footer">
+    <footer class="footer">
         <div class="container">
             <div class="footer-list">
                 <div class="footer-address">
-                    <a class="logo footer-logo" href="./index.html"><span class="logo--text">Web</span>Studio
-                        <img src="./images/logo.svg" alt="Логотип компании">
-                    </a>
+                    <a class="logo footer-logo" href="./index.html"><span class="logo--text">Web</span>Studio</a>
                     <address>
                         <ul>
                             <li class="footer-address__item">
@@ -407,7 +485,7 @@
                 </div>
             </div>
         </div>
-    </footer> -->
+    </footer>
     <div class="backdrop is-hidden" data-modal>
         <div class="backdrop__modal">
             <p class="backdrop__text">Оставьте свои данные, мы вам перезвоним</p>
@@ -458,5 +536,6 @@
         </div>
     </div>
     <script src="./js/modal.js"></script>
+    <script src="./js/mobile-menu.js"></script>
 </body>
 </html>

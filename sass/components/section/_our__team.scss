@@ -5,14 +5,39 @@
 .our-team {
   display: flex;
   flex-wrap: wrap;
-  margin-left: -30px;
+  margin: -15px;
+
+  @media screen and (max-width: 767px) {
+    display: block;
+    margin: 0;
+  }
 }
 .our-team__item {
   background-color: #fff;
-  margin-left: 30px;
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
     0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
+
+  @media screen and (max-width: 767px) {
+    &:not(last-child) {
+      margin-bottom: 30px;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    margin: 15px;
+    flex-basis: calc((100% - 60px) / 2);
+  }
+  @media screen and (min-width: 1200px) {
+    margin: 15px;
+    flex-basis: calc((100% - 120px) / 4);
+  }
+
+  // &:not(last-child) {
+  //   @media screen and (max-width: 1199px) {
+  //     margin-bottom: 30px;
+  //   }
+  // }
 }
 .our-team__card {
   padding-top: 30px;
